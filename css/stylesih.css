@@ -1,0 +1,43 @@
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+
+#loader {
+  position: fixed;
+  width: 100%;
+  height: 100vh;
+  background: navy;
+  z-index: 999;
+}
+
+#container {
+  width: 80px;
+  height: 80px;
+  background: white;
+  position: absolute;
+  top: 45vh;
+  left: 45%;
+  border-radius: 20%;
+  animation: cont 4s infinite;
+}
+
+.ball2 {
+  background: black;
+  animation: blacky 4s infinite;
+}
+.ball3 {
+  background: lime;
+
+  animation: limy 4s infinite;
+}
+
+.ball,
+.ball2,
+.ball3,
+.ball4 {
+  height: 50%;
+  width: 50%;
+  border-radius: 50%;
+}

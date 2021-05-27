@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width , initial-scale=1.0" />
+    <meta name="FreeWill" content="HTML,CSS,Javascript" />
+    <title>FreeWill</title>
+    <link rel="stylesheet" href="css/style1.css" />
+    <link rel="stylesheet" href="css/animation.css" />
+    <link rel="stylesheet" href="css/responsive.css" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Livvic&display=swap"
+      rel="stylesheet"
+    />
+
+    <link
+      href="https://fonts.googleapis.com/css2?family=Righteous&display=swap"
+      rel="stylesheet"
+    />
+
+    <link
+      href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+      rel="stylesheet"
+      integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN"
+      crossorigin="anonymous"
+    />
+    <link
+      href="https://fonts.googleapis.com/css?family=Acme&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css"
+    />
+  </head>
+  <body onload="loadit()">
+    <div id="loader">
+      <div id="container">
+        <div class="ball2"></div>
+        <div class="ball3"></div>
+      </div>
+    </div>
+
+    <header class="main">
+      <nav id="nav-bar">
+        <div id="logo">
+          <p>kush-archmaster</p>
+        </div>
+
+        <div id="nav-content">
+          <ul id="list" class="animated slideInDown">
+            <li><a href="#aboutme" class="me">About</a></li>
+            <li>
+              <a href="http://iiitranchi.ac.in/" target="_blank">My College</a>
+            </li>
+            <li><a href="#upArrow">Contact Me</a></li>
+            <li>
+              <a href="https://kush-archmaster.github.io/" target="_blank"
+                >View Resume</a
+              >
+            </li>
+          </ul>
+
+          <div class="mobileapp">
+            <a href="#"
+              ><i id="moving" onclick="menudown()" class="fa fa-bars"></i
+            ></a>
+          </div>
+        </div>
+      </nav>
+
+      <div id="name">
+        <p id="profession ">
+          <span id="caption">Web Designer.Developer.Illustrator</span>
+        </p>
+        <p id="imp" class="animated flipInX">kushagra upadhyay</p>
+        <div id="icons">
+          <ul>
+            <li>
+              <a
+                href="https://www.facebook.com/kushagra.upadhyay.1447"
+                target="_blank"
+                ><i id="fb" class="fa fa-facebook-square"></i
+              ></a>
+            </li>
+            <li>
+              <a
+                href="https://www.instagram.com/k.u.s.h_tastic.08/"
+                target="_blank"
+                ><i id="insta" class="fa fa-instagram"></i
+              ></a>
+            </li>
+            <li>
+              <a href="https://www.linkedin.com/in/kush08/" target="_blank"
+                ><i id="linkin" class="fa fa-linkedin"></i
+              ></a>
+            </li>
+            <li>
+              <a
+                href="https://twitter.com/Kushagr64464418/with_replies"
+                target="_blank"
+                ><i id="tweet" class="fa fa-twitter"></i
+              ></a>
+            </li>
+          </ul>
+        </div>
+      </div>
+
+      <div id="particles-js"></div>
+
+      <script src="particles.js"></script>
+      <script src="js/app.js"></script>
+    </header>
+
+    <div class="about" id="aboutme">
+      <h1 class="hi">Hey Guysss!!</h1>
+
+      <div class="aboutus">
+        <p>
+          Thankyou for visiting my webpage. Currently this is an ongoing project
+          for personal interest. This is fully based on front-end framework .
+        </p>
+        <p>Languages used are HTML,CSS3,Vanilla JS,Bootstrap.</p>
+        <p style="font-size: 20px; padding-top: 20px;">
+          <span>&copy;kushagra0801</span>
+        </p>
+      </div>
+      <div class="arrow" style="position: relative; top: 8%;">
+        <a href="#nav-bar"><img id="upArrow" src="images/arrow.png" /></a>
+      </div>
+    </div>
+
+    <!--javascript -->
+
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.3/TweenMax.min.js"
+      integrity="sha256-lPE3wjN2a7ABWHbGz7+MKBJaykyzqCbU96BJWjio86U="
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.3/TimelineMax.min.js"
+      integrity="sha256-fIkQKQryItPqpaWZbtwG25Jp2p5ujqo/NwJrfqAB+Qk="
+      crossorigin="anonymous"
+    ></script>
+
+    <script src="js/page-anime.js"></script>
+
+    <script type="text/javascript">
+      var preload = document.getElementById("loader");
+      function loadit() {
+        preload.style.display = "none"; //preloader activation
+      }
+
+      function menudown() {
+        let show = document.getElementById("list");
+        if (show.style.display === "none") {
+          show.style.display = "block";
+        } else {
+          show.style.display = "none";
+        }
+      }
+    </script>
+  </body>
+</html>

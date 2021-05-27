@@ -1,0 +1,132 @@
+@media screen and (max-width: 1257px) {
+  #name {
+    margin: 0 auto;
+    width: 38%;
+  }
+  #imp {
+    font-size: 170%;
+  }
+  #caption {
+    font-size: 90%;
+  }
+  #nav-content ul {
+    width: 700px;
+    margin-left: -10px;
+  }
+  #logo {
+    letter-spacing: 2px;
+  }
+}
+
+@media screen and (max-width: 1152px) {
+  #name {
+    width: 37%;
+    text-align: center;
+  }
+  #caption {
+    text-align: left;
+  }
+  #imp {
+    font-size: 150%;
+  }
+}
+
+@media screen and (max-width: 1030px) {
+  #icons li a {
+    font-size: 35px;
+  }
+  #list {
+    display: none;
+  }
+  #logo {
+    text-align: left;
+    font-size: 20px;
+  }
+  .mobileapp {
+    position: absolute;
+    bottom: 20px;
+    right: 20%;
+    display: block;
+  }
+  #list {
+    max-width: 380px;
+    height: 20vh;
+    margin-top: 35vh;
+    text-align: center;
+    line-height: 5vh;
+  }
+
+  .aboutus p {
+    font-size: 20px;
+  }
+}
+
+@media screen and (max-width: 855px) {
+  #caption {
+    font-size: 70%;
+  }
+}
+
+@media screen and (max-width: 720px) {
+  #imp {
+    font-size: 120%;
+  }
+}
+
+@media screen and (max-width: 665px) {
+  #caption {
+    font-size: 60%;
+  }
+  #icons li a {
+    font-size: 28px;
+  }
+  #icons ul {
+    display: block;
+  }
+
+  #icons li {
+    margin-top: 10px;
+  }
+}
+
+@media screen and (max-width: 570px) {
+  #name {
+    position: absolute;
+    top: 60%;
+    height: 50vh;
+  }
+  #icons ul {
+    display: block;
+  }
+
+  #icons li {
+    margin-top: 10px;
+  }
+
+  .mobileapp {
+    font-size: 25px;
+  }
+  #moving {
+    margin-right: 20px;
+  }
+  #logo {
+    position: absolute;
+  }
+
+  #list {
+    max-width: 380px;
+    height: 20vh;
+    margin-top: 35vh;
+    text-align: right;
+    line-height: 5vh;
+  }
+
+  .aboutus {
+    font-size: 15px;
+  }
+  span {
+    position: relative;
+    bottom: 5px;
+    font-size: 10px;
+  }
+}
