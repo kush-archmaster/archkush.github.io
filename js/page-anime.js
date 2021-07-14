@@ -10,9 +10,4 @@ tl.fromTo(
   { height: "0vh" },
   { height: "100vh", ease: Power2.easeInOut }
 );
-fromTo(
-  about,
-  3,
-  { height: "0vh" },
-  { height: "100vh", ease: Power2.easeInOut }
-);
+
