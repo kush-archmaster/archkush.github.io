@@ -1,7 +1,6 @@
 @media screen and (max-width: 1257px) {
   #name {
     margin: 0 auto;
-    width: 38%;
   }
   #imp {
     font-size: 170%;
@@ -20,7 +19,6 @@
 
 @media screen and (max-width: 1152px) {
   #name {
-    width: 37%;
     text-align: center;
   }
   #caption {
@@ -74,6 +72,9 @@
 }
 
 @media screen and (max-width: 665px) {
+  #name {
+    top: 60%;
+  }
   #caption {
     font-size: 60%;
   }
@@ -90,11 +91,6 @@
 }
 
 @media screen and (max-width: 570px) {
-  #name {
-    position: absolute;
-    top: 60%;
-    height: 50vh;
-  }
   #icons ul {
     display: block;
   }
