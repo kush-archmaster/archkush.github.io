@@ -47,13 +47,13 @@ html {
 }
 
 body {
-  
   font-size: 20px;
   font-family: Verdana, Geneva, Tahoma, sans-serif;
   color: white;
+  overflow-x: hidden;
 }
 
-.bgimg{
+.bgimg {
   background-image: url("../images/vincentiu-solomon-ln5drpv_ImI-unsplash.jpg");
   background-size: cover;
   background-position: center;
@@ -65,12 +65,12 @@ body {
   clip-path: polygon(
     0% 0%,
     100% 0%,
-    100% 20%,
-    70% 50%,
+    100% 40%,
+    80% 50%,
     70% 100%,
     30% 100%,
-    30% 50%,
-    0% 20%,
+    20% 50%,
+    0% 40%,
     0% 0%
   );
   background-size: cover;
@@ -192,13 +192,13 @@ body {
   font-size: 40px;
 }
 
-#fb:hover {
-  color: #3b5998;
+#github:hover {
+  color: rgb(82, 238, 82);
   transition: 0.2s ease-in;
 }
 
-#insta:hover {
-  color: burlywood;
+#mail:hover {
+  color: rgb(240, 144, 144);
   transition: 0.2s ease-in;
 }
 
@@ -320,4 +320,42 @@ body {
   position: relative;
   left: 30%;
   bottom: 10%;
+}
+
+.box {
+  margin: 0 auto;
+  max-width: 520px;
+  background: rgba(0, 0, 0, 0.6);
+  padding: 40px;
+  text-align: center;
+  color: white;
+  font-family: "Century Gothic", sans-serif;
+}
+
+.box-img {
+  border-radius: 50%;
+  width: 200px;
+  height: 200px;
+}
+
+.box h1 {
+  border: 1px solid;
+  font-size: 30px;
+  letter-spacing: 4px;
+  font-weight: 300;
+}
+
+.box h5 {
+  font-size: 20px;
+  letter-spacing: 3px;
+  font-weight: 200;
+  padding: 5px;
+}
+
+.footer {
+  line-height: 40px;
+  width: 100vw;
+  background: black;
+  opacity: 0.7;
+  text-align: center;
 }
