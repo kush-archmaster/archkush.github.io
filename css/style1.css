@@ -6,6 +6,7 @@
 
 html {
   scroll-behavior: smooth;
+ 
 }
 
 #loader {
@@ -51,6 +52,7 @@ body {
   font-family: Verdana, Geneva, Tahoma, sans-serif;
   color: white;
   overflow-x: hidden;
+  
 }
 
 .bgimg {
@@ -77,6 +79,7 @@ body {
   background-repeat: no-repeat;
   background-position: center;
   height: 100vh;
+
 }
 
 #nav-bar {
@@ -339,6 +342,7 @@ body {
 }
 
 .box h1 {
+  
   font-size: 30px;
   letter-spacing: 4px;
   font-weight: 300;
@@ -351,10 +355,53 @@ body {
   padding: 5px;
 }
 
+
 .footer {
   line-height: 40px;
   width: 100vw;
   background: black;
   opacity: 0.7;
   text-align: center;
+}
+
+
+.tech{
+  height: 60vh;
+  width: 100vw;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+  background: rgba(0, 0, 0, 0.7);
+}
+
+.badge-language{
+  width: 60%;
+  min-width: 500px;
+  padding: 5px;
+  display: grid;
+  grid-template-columns: repeat(4,minmax(0,1fr));
+
+}
+
+.badge-language img, .badge-tools img{
+  width: 60px;
+  height: 60px;
+  margin: 5px
+}
+
+.tech h2{
+  animation: change 2s infinite linear;
+}
+
+@keyframes change {
+   0%{
+     color: whitesmoke;
+   }
+   50%{
+     color: yellow;
+   }
+   100%{
+     color: whitesmoke;
+   }
 }
