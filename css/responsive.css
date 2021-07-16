@@ -66,31 +66,34 @@
 }
 
 @media screen and (max-width: 720px) {
+  #profession {
+    font-size: 150%;
+    letter-spacing: 1px;
+  }
   #imp {
-    font-size: 120%;
+    font-size: 165%;
+  }
+  #logo {
+    position: absolute;
+    left: 20px;
   }
 }
 
 @media screen and (max-width: 665px) {
   #name {
-    top: 60%;
+    top: 50%;
   }
   #caption {
     font-size: 60%;
   }
-
 }
 
 @media screen and (max-width: 570px) {
-
-  .mobileapp {
-    font-size: 25px;
+  body {
+    overflow-x: hidden;
   }
   #moving {
     margin-right: 20px;
-  }
-  #logo {
-    position: absolute;
   }
 
   #list {
