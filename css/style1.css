@@ -6,7 +6,6 @@
 
 html {
   scroll-behavior: smooth;
- 
 }
 
 #loader {
@@ -52,7 +51,6 @@ body {
   font-family: Verdana, Geneva, Tahoma, sans-serif;
   color: white;
   overflow-x: hidden;
-  
 }
 
 .bgimg {
@@ -79,7 +77,6 @@ body {
   background-repeat: no-repeat;
   background-position: center;
   height: 100vh;
-
 }
 
 #nav-bar {
@@ -89,17 +86,16 @@ body {
   height: 80px;
   display: flex;
   flex-direction: row;
-  justify-content: space-around;
+  justify-content: space-between;
   align-items: center;
   background: black;
-  opacity: 0.6;
+  opacity: 0.7;
 }
 
 #logo {
   width: 400px;
   text-align: center;
   text-transform: uppercase;
-
   color: white;
   font-weight: bold;
   letter-spacing: 3px;
@@ -115,7 +111,7 @@ body {
 }
 
 #list {
-  width: 800px;
+  width: 400px;
   display: flex;
   flex-direction: row;
   justify-content: space-around;
@@ -135,7 +131,7 @@ body {
 #nav-content a:hover {
   color: yellow;
   letter-spacing: 2px;
-  transition: all 0.3s ease-in;
+  transition: 0.3s ease-in;
 }
 
 #name {
@@ -193,26 +189,6 @@ body {
   position: relative;
   top: 10px;
   font-size: 40px;
-}
-
-#github:hover {
-  color: rgb(82, 238, 82);
-  transition: 0.2s ease-in;
-}
-
-#mail:hover {
-  color: rgb(240, 144, 144);
-  transition: 0.2s ease-in;
-}
-
-#linkin:hover {
-  color: navy;
-  transition: 0.2s ease-in;
-}
-
-#tweet:hover {
-  color: rgb(13, 184, 226);
-  transition: 0.2s ease-in;
 }
 
 .about {
@@ -295,22 +271,6 @@ body {
   z-index: 10;
 }
 
-.arrow {
-  top: 0%;
-  width: 100%;
-  text-align: center;
-}
-
-.arrow img {
-  height: 50px;
-  width: 50px;
-
-  position: relative;
-  right: 2px;
-
-  cursor: pointer;
-}
-
 #devp {
   border: 1px solid red;
   width: 40%;
@@ -342,7 +302,6 @@ body {
 }
 
 .box h1 {
-  
   font-size: 30px;
   letter-spacing: 4px;
   font-weight: 300;
@@ -355,17 +314,47 @@ body {
   padding: 5px;
 }
 
+.social-icons ul {
+  list-style: none;
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.social-icons ul li a {
+  color: white;
+  font-size: 40px;
+}
+
+.linked:hover {
+  color: #0077b5;
+  transition: 2ms all ease-in;
+}
+
+.whatsapp:hover {
+  color: #25d366;
+  transition: 2ms all ease-in;
+}
+
+.git:hover {
+  color: whitesmoke;
+  transition: 2ms all ease-in;
+}
 
 .footer {
-  line-height: 40px;
+  line-height: 30px;
   width: 100vw;
   background: black;
   opacity: 0.7;
   text-align: center;
 }
 
+.footer a {
+  color: whitesmoke;
+  text-decoration: none;
+  font-weight: 100;
+}
 
-.tech{
+.tech {
   height: 60vh;
   width: 100vw;
   display: flex;
@@ -375,33 +364,33 @@ body {
   background: rgba(0, 0, 0, 0.7);
 }
 
-.badge-language{
+.badge-language {
   width: 60%;
-  min-width: 500px;
+  min-width: 400px;
   padding: 5px;
   display: grid;
-  grid-template-columns: repeat(4,minmax(0,1fr));
-
+  grid-template-columns: repeat(4, minmax(0, 1fr));
 }
 
-.badge-language img, .badge-tools img{
+.badge-language img,
+.badge-tools img {
   width: 60px;
   height: 60px;
-  margin: 5px
+  margin: 5px;
 }
 
-.tech h2{
+.tech h2 {
   animation: change 2s infinite linear;
 }
 
 @keyframes change {
-   0%{
-     color: whitesmoke;
-   }
-   50%{
-     color: yellow;
-   }
-   100%{
-     color: whitesmoke;
-   }
+  0% {
+    color: whitesmoke;
+  }
+  50% {
+    color: yellow;
+  }
+  100% {
+    color: whitesmoke;
+  }
 }
