@@ -78,26 +78,10 @@
   #caption {
     font-size: 60%;
   }
-  #icons li a {
-    font-size: 28px;
-  }
-  #icons ul {
-    display: block;
-  }
 
-  #icons li {
-    margin-top: 10px;
-  }
 }
 
 @media screen and (max-width: 570px) {
-  #icons ul {
-    display: block;
-  }
-
-  #icons li {
-    margin-top: 10px;
-  }
 
   .mobileapp {
     font-size: 25px;
