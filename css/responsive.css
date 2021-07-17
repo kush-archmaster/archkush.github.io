@@ -33,13 +33,80 @@
   #icons li a {
     font-size: 35px;
   }
+
+  .hamburger {
+    visibility: visible;
+    position: absolute;
+    right: 20px;
+    top: 20px;
+  }
+
+  .hamburger .mainMenu {
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    z-index: 100;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: black;
+    transition: top 1s ease;
+    display: none;
+  }
+
+  .hamburger .mainMenu .closeMenu {
+    display: block;
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    cursor: pointer;
+  }
+
+  .hamburger .openMenu {
+    display: block;
+    position: relative;
+    top: 2px;
+  }
+
+  .hamburger .mainMenu li a:hover {
+    background: none;
+    color: yellow;
+    transform: scale(1.04, 1.04);
+  }
+
+  .barIcons i {
+    display: inline-block;
+    padding: 12px;
+    font-size: 2rem;
+  }
+
+  .bargit:hover {
+    color: orangered;
+  }
+
+  .barinsta:hover {
+    color: #8a3ab9;
+  }
+
+  .barlinkd:hover {
+    color: #0077b5;
+  }
+
   #list {
     display: none;
   }
+
   #logo {
     text-align: left;
     font-size: 20px;
   }
+  #logo {
+    position: absolute;
+    left: 20px;
+  }
+
   .mobileapp {
     position: absolute;
     bottom: 20px;
@@ -72,10 +139,6 @@
   }
   #imp {
     font-size: 165%;
-  }
-  #logo {
-    position: absolute;
-    left: 20px;
   }
 }
 
