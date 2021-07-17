@@ -16,6 +16,7 @@
       rel="stylesheet"
     />
 
+
     <link
       href="https://fonts.googleapis.com/css2?family=Righteous&display=swap"
       rel="stylesheet"
@@ -45,6 +46,36 @@
           <p>kush-archmaster</p>
         </div>
 
+        <!--hamburger menu-->
+      <div class="hamburger">
+         <div class="openMenu"><i class="fa fa-bars"></i></div>
+          <ul class="mainMenu">
+           <li><a href="#aboutme" class="me">About Me 👦</a></li>
+           <li>
+            <a href="pdf/Kushagra_Upadhyay.pdf" download>Resume</a>
+           </li>
+           <li><a href="#aboutme" class="me">Projects</a></li>
+           <li>
+           <li>
+            <a href="https://kush-archmaster.github.io/" target="_blank"
+              > Know More</a
+            >
+           </li>
+
+
+           <div class="closeMenu"> <i class="fa fa-times"></i></div>
+           <span class="barIcons">
+              <a href="https://github.com/kush-archmaster" class="bargit"><i class="fab fa-github"></i></a>
+              <a href="https://www.instagram.com/k.u.s.h_tastic.08/" class="barinsta"><i class="fab fa-instagram"></i></a>
+              <a href="https://www.linkedin.com/in/kush08/" class="barlinkd"><i class="fab fa-linkedin"></i></a>
+           </span>
+        </ul>
+      </div>
+        
+
+
+
+        <!--desktop mode-->
         <div id="nav-content">
           <ul id="list" class="animated slideInDown">
             <li><a href="#aboutme" class="me">About</a></li>
@@ -57,8 +88,6 @@
               >
             </li>
           </ul>
-
-         
         </div>
       </nav>
 
@@ -170,6 +199,29 @@
       function loadit() {
         preload.style.display = "none"; //preloader activation
       }
+
+      const mainMenu = document.querySelector('.mainMenu');
+      const closeMenu = document.querySelector('.closeMenu');
+      const openMenu = document.querySelector('.openMenu');
+      const name = document.getElementById('name');
+
+
+      function show(){
+        mainMenu.style.display = 'flex';
+        mainMenu.style.top = '0';
+        name.style.display = 'none';
+        document.body.style.overflow = 'hidden';
+      }
+
+      function closeit() {
+        mainMenu.style.top = '-100%';
+        name.style.display = 'block';
+        document.body.style.overflowY = 'scroll';
+      }
+
+      openMenu.addEventListener('click', show);
+      closeMenu.addEventListener('click', closeit);
+
 
     </script>
   </body>
