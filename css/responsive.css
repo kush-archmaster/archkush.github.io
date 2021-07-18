@@ -68,6 +68,7 @@
     display: block;
     position: relative;
     top: 2px;
+    transition: top 1s ease;
   }
 
   .hamburger .mainMenu li a:hover {
