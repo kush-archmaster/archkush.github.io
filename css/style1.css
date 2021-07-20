@@ -354,6 +354,13 @@ body {
   background: rgba(0, 0, 0, 0.6);
 }
 
+.project-sect .proj-title {
+  padding: 10px;
+  font-size: 30px;
+  font-weight: 300;
+  animation: change 2s infinite linear;
+}
+
 .container {
   display: flex;
   justify-content: center;
